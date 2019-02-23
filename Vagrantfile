@@ -22,7 +22,7 @@ EOF
 	SHELL
 
 	config.vm.provision :shell, run: 'always', inline: <<-SHELL
-		sudo kpartx -a -s /vagrant/DietPi_v6.20_RPi-ARMv6-Stretch.img
+		sudo kpartx -a -s /vagrant/2018-11-13-raspbian-stretch-lite.img
 		mkdir /vagrant/tftpboot
 		sudo mount /dev/mapper/loop0p1 /vagrant/tftpboot
 	SHELL
